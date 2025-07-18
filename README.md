@@ -1,4 +1,4 @@
-![Portada del repositorio](./primer-entrega/portada.png.png)
+![Portada del repositorio](./primer-entrega/portada.png)
 
 # 📦 Entregas del Curso de JavaScript
 
