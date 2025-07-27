@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tanque {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 2rem auto;
+    border: 4px solid #555;
+    border-radius: 10px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.agua {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #4da6ff;
+    transition: height 1s ease;
+}
+
+.temperatura {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: blue;
+    transition: color 1s;
+}
+
+.valvula {
+    position: absolute;
+    width: 100%;
+    padding: 0.4rem;
+    background-color: gray;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.valvula-superior {
+    top: -40px;
+}
+
+.valvula-inferior {
+    bottom: -40px;
+}
+
+.valvula.abierta {
+    background-color: green;
+}
+
+.acciones {
+    margin-top: 2rem;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+#estado {
+    margin-top: 1rem;
+    font-weight: bold;
+}
