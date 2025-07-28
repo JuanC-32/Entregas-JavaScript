@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proceso de sanitizacion de un tanque</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sanitización del Tanque</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="contenedor">
+        <h1>Simulación de Sanitización</h1>
+
+    <div class="tanque">
+        <div id="agua" class="agua"></div>
+        <div id="temperatura" class="temperatura">Temperatura: 25°C</div>
+        <div class="valvula valvula-superior" id="valvulaEntrada">Válvula Entrada</div>
+        <div class="valvula valvula-inferior" id="valvulaSalida">Válvula Salida</div>
+    </div>
+
+    <div class="acciones">
+        <button onclick="iniciarSanitizacion()">Iniciar Sanitización</button>
+        <p id="estado"></p>
+    </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

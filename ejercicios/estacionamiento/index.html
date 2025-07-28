@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estacionamiento</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>🅿️ Sistema de Estacionamiento</h1>
+
+    <div class="formulario">
+    <input type="text" id="placaInput" placeholder="Ingrese la placa" />
+    <button onclick="registrarEntrada()">Registrar Entrada</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Hora de entrada</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="tablaEstacionamiento">
+        <!-- Filas se añadirán aquí -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
