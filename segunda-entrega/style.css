@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Caja del semáforo */
+#semaforo {
+  width: 140px;
+  background: #333;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 0 15px #000;
+}
+
+/* Luces */
+.luz {
+  width: 80px;
+  height: 80px;
+  margin: 12px 0;
+  border-radius: 50%;
+  background-color: gray;
+  box-shadow: 0 0 5px #000 inset;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+  0% { box-shadow: 0 0 10px currentColor; }
+  50% { box-shadow: 0 0 30px currentColor; }
+  100% { box-shadow: 0 0 10px currentColor; }
+}
+
+#rojo.encendido {
+  background-color: red;
+  animation: parpadeo 1s infinite;
+}
+
+#amarillo.encendido {
+  background-color: yellow;
+  animation: parpadeo 0.8s infinite;
+}
+
+#verde.encendido {
+  background-color: green;
+  animation: parpadeo 1.2s infinite;
+}
+
+/* Estado y contador */
+#estado {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#contador, #cronometro {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Botones */
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+/* Historial */
+#historial {
+  list-style: none;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 0;
+}
+
+#historial li {
+  background: #444;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+

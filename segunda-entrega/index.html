@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simulación de Semáforo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Sección semáforo -->
+        <section id="semaforo">
+            <div class="luz" id="rojo"></div>
+            <div class="luz" id="amarillo"></div>
+            <div class="luz" id="verde"></div>
+        </section>
+
+        <!-- Estado y cronómetro -->
+        <section>
+            <p id="estado">Estado actual: 🚗 Verde / 🧍 Esperar</p>
+            <p id="contador">Ciclos: 0</p>
+            <p id="cronometro">⏳ Próximo cambio en: 5s</p>
+        </section>
+
+        <!-- Controles -->
+        <section>
+            <button id="btnPeaton">🚶 Solicitar paso peatonal</button>
+            <button id="btnReset">🔄 Reiniciar contador</button>
+            <button id="btnLimpiarHistorial">🧹 Limpiar historial</button>
+        </section>
+
+        <!-- Historial -->
+        <section>
+            <h2>🧾 Historial de eventos:</h2>
+            <ul id="historial"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
