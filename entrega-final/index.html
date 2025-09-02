@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda de Videojuegos — Simulación</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>🎮 Tienda de Videojuegos</h1>
+    <div class="actions">
+      <input id="searchInput" type="search" placeholder="Buscar por título..." aria-label="Buscar videojuegos" />
+      <select id="genreFilter" aria-label="Filtrar por género">
+        <option value="">Todos los géneros</option>
+      </select>
+      <select id="platformFilter" aria-label="Filtrar por plataforma">
+        <option value="">Todas las plataformas</option>
+      </select>
+      <select id="sortSelect" aria-label="Ordenar">
+        <option value="featured">Destacados</option>
+        <option value="price-asc">Precio: menor a mayor</option>
+        <option value="price-desc">Precio: mayor a menor</option>
+        <option value="rating-desc">Rating: alto a bajo</option>
+        <option value="title-asc">Título A-Z</option>
+      </select>
+    </div>
+    <button id="clearFilters" class="btn ghost">Limpiar filtros</button>
+  </header>
+
+  <main class="layout">
+    <section class="catalog">
+      <div id="catalogGrid" class="grid"></div>
+      <div id="emptyState" class="empty hidden">No se encontraron juegos con esos criterios.</div>
+    </section>
+
+    <aside class="cart">
+      <div class="cart-header">
+        <h2>🛒 Carrito</h2>
+        <button id="clearCart" class="btn danger small">Vaciar</button>
+      </div>
+      <div id="cartList" class="cart-list"></div>
+      <div class="cart-footer">
+        <div class="totals">
+          <span>Items: <strong id="cartCount">0</strong></span>
+          <span>Total: <strong id="cartTotal">$0</strong></span>
+        </div>
+        <div class="coupon-row">
+          <input id="couponInput" type="text" placeholder="Cupón (GAMER10)" />
+          <button id="applyCoupon" class="btn small">Aplicar</button>
+        </div>
+        <button id="checkoutBtn" class="btn primary full">Pagar</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>Hecho con HTML, CSS y JS • Simulación educativa</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

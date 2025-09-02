@@ -1,0 +1,102 @@
+[
+  {
+    "id": "GTA-V",
+    "title": "Grand Theft Auto V",
+    "price": 129000,
+    "genre": "Acción",
+    "platform": "PC",
+    "rating": 4.8,
+    "stock": 12,
+    "image": "./img/gta-v.jpg"
+  },
+  {
+    "id": "MINECRAFT",
+    "title": "Minecraft",
+    "price": 99000,
+    "genre": "Sandbox",
+    "platform": "PC",
+    "rating": 4.7,
+    "stock": 20,
+    "image": "./img/minecraft.jpg"
+  },
+  {
+    "id": "ZELDA-TK",
+    "title": "Zelda: Tears of the Kingdom",
+    "price": 289000,
+    "genre": "Aventura",
+    "platform": "Switch",
+    "rating": 4.9,
+    "stock": 8,
+    "image": "./img/zelda.jpg"
+  },
+  {
+    "id": "FIFA-25",
+    "title": "EA Sports FC 25",
+    "price": 239000,
+    "genre": "Deportes",
+    "platform": "PS5",
+    "rating": 4.3,
+    "stock": 15,
+    "image": "./img/fc25.jpg"
+  },
+  {
+    "id": "MK11",
+    "title": "Mortal Kombat 11",
+    "price": 149000,
+    "genre": "Lucha",
+    "platform": "PS5",
+    "rating": 4.2,
+    "stock": 10,
+    "image": "./img/mk11.jpg"
+  },
+  {
+    "id": "SPIDERMAN2",
+    "title": "Marvel's Spider‑Man 2",
+    "price": 299000,
+    "genre": "Acción",
+    "platform": "PS5",
+    "rating": 4.6,
+    "stock": 6,
+    "image": "./img/spider-man-2.jpg"
+  },
+  {
+    "id": "FORZA-H",
+    "title": "Forza Horizon 5",
+    "price": 199000,
+    "genre": "Carreras",
+    "platform": "Xbox",
+    "rating": 4.5,
+    "stock": 14,
+    "image": "./img/forza-horizon-5.jpg"
+  },
+  {
+    "id": "HALO-I",
+    "title": "Halo Infinite",
+    "price": 169000,
+    "genre": "Acción",
+    "platform": "Xbox",
+    "rating": 4.0,
+    "stock": 9,
+    "image": "./img/halo-infinite.jpg"
+  },
+  {
+    "id": "ELDEN",
+    "title": "Elden Ring",
+    "price": 259000,
+    "genre": "RPG",
+    "platform": "PC",
+    "rating": 4.9,
+    "stock": 7,
+    "image": "./img/elden-ring.jpg"
+  },
+  {
+    "id": "ANIMAL-C",
+    "title": "Animal Crossing: New Horizons",
+    "price": 219000,
+    "genre": "Simulación",
+    "platform": "Switch",
+    "rating": 4.6,
+    "stock": 13,
+    "image": "./img/animal-crossing.jpg"
+  }
+]
